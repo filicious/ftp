@@ -1,6 +1,6 @@
 {
-	"name":"Filicious/FiliciousCore",
-	"description":"Filicious is a high level object oriented filesystem abstraction for PHP.",
+	"name":"Filicious/FiliciousFTP",
+	"description":"FTP filesystem adapter for Filicious.",
 	"homepage":"http://filicious.org",
 	"authors":[
 		{
@@ -24,7 +24,7 @@
 	],
 	"autoload":{
 		"psr-0":{
-			"Filicious":"src/"
+			"Filicious\\FTP":"src/"
 		}
 	},
 	"minimum-stability":"dev"
