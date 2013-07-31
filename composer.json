@@ -1,31 +1,49 @@
 {
-	"name":"Filicious/FiliciousFTP",
-	"description":"FTP filesystem adapter for Filicious.",
-	"homepage":"http://filicious.org",
-	"authors":[
+	"name": "filicious/ftp",
+	"description": "FTP adapter for filicious.",
+	"keywords": ["filesystem", "file", "vfs", "ftp"],
+	"homepage": "http://filicious.org",
+	"license": "LGPL-3.0+",
+	"authors": [
 		{
-			"name":"Tristan Lins",
-			"email":"tristan.lins@bit3.de",
-			"homepage":"http://bit3.de",
-			"role":"Developer"
+			"name": "Tristan Lins",
+			"email": "tristan.lins@bit3.de",
+			"homepage": "http://bit3.de",
+			"role": "Developer"
 		},
 		{
-			"name":"Christian Schiffler",
-			"email":"c.schiffler@cyberspectrum.de",
-			"homepage":"http://www.cyberspectrum.de",
-			"role":"Developer"
+			"name": "Christian Schiffler",
+			"email": "c.schiffler@cyberspectrum.de",
+			"homepage": "http://www.cyberspectrum.de",
+			"role": "Developer"
 		},
 		{
-			"name":"Oliver Hoff",
-			"email":"oliver@hofff.com",
-			"homepage":"http://www.hofff.com",
-			"role":"Developer"
+			"name": "Oliver Hoff",
+			"email": "oliver@hofff.com",
+			"homepage": "http://www.hofff.com",
+			"role": "Developer"
 		}
 	],
-	"autoload":{
-		"psr-0":{
-			"Filicious\\FTP":"src/"
+	"support": {
+		"irc": "irc://irc.freenode.org/filicious"
+	},
+	"require": {
+		"filicious/core": "~1"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.*"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-0": {
+			"Filicious\\FTP": "src/",
+			"Filicious\\FTP\\Test": "test/"
 		}
 	},
-	"minimum-stability":"dev"
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	}
 }
